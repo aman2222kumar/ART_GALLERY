@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ART_GALLERY/static/css/main.4b5e09a7.css",
+    "main.js": "/ART_GALLERY/static/js/main.2c45ce48.js",
+    "static/js/787.574a4694.chunk.js": "/ART_GALLERY/static/js/787.574a4694.chunk.js",
+    "static/media/sky-shine.jpg": "/ART_GALLERY/static/media/sky-shine.35d40e6eac97819722ef.jpg",
+    "static/media/mountain-sun.jpg": "/ART_GALLERY/static/media/mountain-sun.62c2faba31d9faa887cb.jpg",
+    "static/media/sky-night.jpg": "/ART_GALLERY/static/media/sky-night.90561b335e66a670cdc3.jpg",
+    "static/media/mountain.jpg": "/ART_GALLERY/static/media/mountain.b1921ae601ec69a85db8.jpg",
+    "static/media/sun-shine.jpg": "/ART_GALLERY/static/media/sun-shine.407e97da52448cd5cf8b.jpg",
+    "static/media/sky-shine2.jpg": "/ART_GALLERY/static/media/sky-shine2.388d780fb0034387a2ee.jpg",
+    "static/media/logo.svg": "/ART_GALLERY/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ART_GALLERY/index.html",
+    "main.4b5e09a7.css.map": "/ART_GALLERY/static/css/main.4b5e09a7.css.map",
+    "main.2c45ce48.js.map": "/ART_GALLERY/static/js/main.2c45ce48.js.map",
+    "787.574a4694.chunk.js.map": "/ART_GALLERY/static/js/787.574a4694.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b5e09a7.css",
+    "static/js/main.2c45ce48.js"
+  ]
+}
