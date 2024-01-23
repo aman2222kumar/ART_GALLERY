@@ -22,10 +22,19 @@ function App() {
   const [randomNumber, setRandomNumber] = useState(0);
   let { loading, error } = useSelector((state) => state.apiData);
   console.log(loading);
-  window.onload = () => {
-    settOpacity(1);
-  };
+
   // const apiKey = process.env.REACT_APP_API_KEY;
+  useEffect(() => {
+    const handleLoad = () => {
+      settOpacity(1);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
   useEffect(() => {
     // console.log(loading);
     // console.log(error);
