@@ -405,29 +405,45 @@ padding-right: 0.5rem;
 }
 }
 @media screen and (max-width:800px) {
-  .modal_data .img_and_description {
+  /* .modal_data .img_and_description {
     display: flex;
     gap: 1rem;
     justify-content: space-around;
     padding-left: 1rem;
     padding-right: 1rem;
     height: 80%;
+} */
+.modal_data .img_and_description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 100%;
 }
 .img_prev{
   width: 80%;
 }
 .img_prev img {
-  height: 27rem;
+  height: 13rem;
   /* width: 22rem; */
   width: 80%;
   object-fit: cover;
 }
 .modal_data .img_and_description .descriptions {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   gap: 0.1rem;
   height: 60%;
 }
+/* .modal_data .img_and_description .descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  height: 60%;
+} */
 .modal_data .img_and_description .descriptions .download_options {
   display: flex;
   flex-direction: column;
@@ -461,6 +477,58 @@ padding-right: 0.5rem;
 }
 }
 @media screen and (max-width:680px){
+  .modal_data {
+    position: fixed;
+    top: 1rem;
+    left: 3rem;
+    background-color: rgb(255, 255, 255);
+    color: #797979;
+    width: 80%;
+    height: 95%;
+    z-index: 1300;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.modal_data .img_and_description {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 70%;
+}
+.modal_data .img_and_description .descriptions {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  flex-direction: column;
+  gap: 0.1rem;
+  height: 60%;
+  
+}
+.modal_data .img_and_description .descriptions .download_options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 60%;
+  font-size: 0.8rem;
+}
+.information {
+  height: 30%;
+  width: max-content;
+  position: relative;
+  font-size: 0.8rem;
+  top: 4rem;
+}
+.tag_about_img {
+  display: flex;
+  gap: 0.2rem;
+  padding-left: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  top: 5.7rem;
+}
   #image_data{
     display: grid;
     grid-template-columns: 300px;
@@ -504,15 +572,7 @@ padding-right: 0.5rem;
 .information {
   height: 40%;
   position: relative;
-  top: 3rem;
+  top: 3.7rem;
 }
-.tag_about_img {
-  display: flex;
-  gap: 0.5rem;
-  padding-left: 1rem;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  top: 1rem;
-}
+
   }
