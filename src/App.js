@@ -18,23 +18,12 @@ function App() {
   const [isActive, setActive] = useState(false);
   const [searchData, setSearchData] = useState("");
   const arr = new Array(img1, img2, img3, img4, img5, img6);
-  const [isOpacity, settOpacity] = useState(0);
-  const [randomNumber, setRandomNumber] = useState(0);
-  let { loading, error } = useSelector((state) => state.apiData);
+
+  const [randomNumber, setRandomNumber] = useState(1);
+  let { loading } = useSelector((state) => state.apiData);
   console.log(loading);
 
   // const apiKey = process.env.REACT_APP_API_KEY;
-  useEffect(() => {
-    const handleLoad = () => {
-      settOpacity(1);
-    };
-
-    window.addEventListener("load", handleLoad);
-
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
   useEffect(() => {
     // console.log(loading);
     // console.log(error);
@@ -62,7 +51,6 @@ function App() {
         backgroundImage: `url(${arr[randomNumber]})`,
         width: "100vw",
         height: isActive === true ? "max-content" : "100vh",
-        opacity: isOpacity,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
